@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Traffic Light Simulation</title>
+    <link rel="stylesheet" href="traffic.css">
+</head>
+<body>
+
+<h2>Traffic Light Simulation</h2>
+
+<div class="traffic-light">
+    <div class="light red on" id="red"></div>
+    <div class="light yellow" id="yellow"></div>
+    <div class="light green" id="green"></div>
+</div>
+
+<button id="btn">Change Light</button>
+
+<div class="road">
+    <div class="lane"></div>
+
+    <!-- Red Car -->
+    <div class="car" id="car1">
+        <div class="car-body red-car"></div>
+        <div class="car-roof red-car"></div>
+        <div class="window left"></div>
+        <div class="window right"></div>
+        <div class="wheel left-wheel"></div>
+        <div class="wheel right-wheel"></div>
+    </div>
+
+    <!-- Black Car -->
+    <div class="car" id="car2" style="top:85px;">
+        <div class="car-body black-car"></div>
+        <div class="car-roof black-car"></div>
+        <div class="window left"></div>
+        <div class="window right"></div>
+        <div class="wheel left-wheel"></div>
+        <div class="wheel right-wheel"></div>
+    </div>
+</div>
+
+<script src="traffic.js"></script>
+</body>
+</html>
