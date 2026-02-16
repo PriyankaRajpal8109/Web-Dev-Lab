@@ -1,0 +1,113 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background: #f2f2f2;
+}
+
+/* Traffic Light */
+.traffic-light {
+    width: 90px;
+    background: #222;
+    padding: 15px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.light {
+    width: 50px;
+    height: 50px;
+    background: #555;
+    border-radius: 50%;
+    margin: 10px auto;
+}
+
+.red.on { background: red; }
+.yellow.on { background: yellow; }
+.green.on { background: green; }
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 15px;
+}
+
+/* Road */
+.road {
+    width: 100%;
+    height: 150px;
+    background: #333;
+    position: relative;
+    overflow: hidden;
+}
+
+.lane {
+    position: absolute;
+    top: 75px;
+    width: 100%;
+    height: 4px;
+    background: repeating-linear-gradient(
+        to right,
+        white 0px,
+        white 30px,
+        transparent 30px,
+        transparent 60px
+    );
+}
+
+/* Car Container */
+.car {
+    position: absolute;
+    left: 10px;
+    top: 25px;
+    width: 140px;
+    height: 60px;
+}
+
+/* Car Body */
+.car-body {
+    position: absolute;
+    bottom: 10px;
+    width: 140px;
+    height: 35px;
+    border-radius: 8px;
+}
+
+/* Car Roof */
+.car-roof {
+    position: absolute;
+    top: 5px;
+    left: 30px;
+    width: 80px;
+    height: 25px;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Windows */
+.window {
+    position: absolute;
+    top: 10px;
+    width: 22px;
+    height: 15px;
+    background: #cce6ff;
+    border-radius: 3px;
+}
+
+.window.left { left: 45px; }
+.window.right { left: 75px; }
+
+/* Wheels */
+.wheel {
+    position: absolute;
+    bottom: 0;
+    width: 20px;
+    height: 20px;
+    background: black;
+    border-radius: 50%;
+}
+
+.left-wheel { left: 20px; }
+.right-wheel { right: 20px; }
+
+/* Colors */
+.red-car { background: red; }
+.black-car { background: black; }
