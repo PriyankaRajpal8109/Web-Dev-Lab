@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyanka Rajpal - Portfolio</title>
+    <!-- for textt styling -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="exp3.css">
+
+    <!-- Internal CSS -->
+  <style>  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;   /* Light grey background */
+    margin: 0;
+    padding: 0;
+    color: #2c2c2c;
+}
+
+header {
+    background-color: #1e3a5f;   /* Navy blue */
+    color: #ffffff;
+    text-align: center;
+    padding: 35px 0;
+    font-family: 'Georgia', serif;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 8px;
+    color: #cfe8ff;
+}
+
+/* .profile-section {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    gap: 40px;
+    background-color: #ffffff;
+}
+
+.profile-photo img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 5px solid #ff6f61;   Coral accent
+} */
+
+.about-section {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 50px 80px;
+    max-width: 1200px;
+    margin: 0 auto;      /* THIS removes right empty space */
+}
+
+.profile-img {
+    width: 300px;
+    height:300px;
+    border-radius: 50%;
+    border: 4px solid #ff6b5a;
+}
+
+.about-text {
+    flex: 1;            /* THIS fills remaining space */
+    font-size: 1.4rem;
+    line-height: 1.7;
+    color: #333;
+}
+
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px;
+    gap: 25px;
+    background-color: #e9eef3;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 25px;
+    width: 260px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.15);
+    transition: transform 0.3s, background-color 0.3s;
+    border-top: 6px solid #2aa198;  /* Teal contrast */
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    background-color: #f9fbfd;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #1e3a5f;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.card p {
+    color: #444;
+    font-size: 1.05em;
+}
+
+footer {
+    background-color: #1e3a5f;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.05em;
+}
+
+footer a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: #ffcc80;   /* Gold contrast */
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #ff6f61;   /* Coral hover */
+}
+
+/* text */
+/* ===== Professional Typography ===== */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #2c2c2c;
+}
+
+/* Name / Main Heading */
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Designation / Subtitle */
+header p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+/* Profile Description Text */
+.description {
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align: justify;
+}
+
+/* Section Titles (Hobbies, Passion, etc.) */
+.card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 10px;
+}
+
+/* Section Content */
+.card p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+/* Footer Text */
+footer {
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+
+/* hover */
+/* Smooth transition for text */
+.card h3,
+.card p {
+    transition: font-size 0.3s ease;
+}
+
+/* Increase text size on hover */
+.card:hover h3 {
+    font-size: 1.4rem;
+}
+
+.card:hover p {
+    font-size: 1.1rem;
+}
+
+/* ===== Improved Technical Skills Section ===== */
+
+.about-section {
+    padding-bottom: 20px;   /* reduce gap */
+}
+
+.skills-section {
+    background-color: #ffffff;   /* white, not grey */
+    padding: 30px 20px 40px;      /* balanced height */
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+}
+
+.skills-section h2 {
+    font-size: 1.8rem;
+    color: #1e3a5f;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.skill {
+    background-color: #f4f6f8;
+    border: 1px solid #dbe2ea;
+
+    /* This makes it proper pill */
+    border-radius: 999px;
+
+    padding: 16px 28px;
+    min-width: 240px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    transition: all 0.3s ease;
+}
+.skill-title {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #1e3a5f;
+}
+
+.skill-desc {
+    font-size: 0.85rem;
+    margin-top: 4px;
+    color: #555;
+}
+
+.skill:hover {
+    background-color: #1e3a5f;
+    transform: translateY(-4px);
+}
+
+.skill:hover .skill-title,
+.skill:hover .skill-desc {
+    color: #ffffff;
+}
+
+
+
+
+
+
+/* underline effect */
+.skills-section h2::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: #1e3a5f;
+    display: block;
+    margin: 8px auto 0;
+    border-radius: 2px;
+}
+
+
+/* Skill pills */
+.skills-section {
+    padding: 60px 8%;
+    background-color: #ffffff;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+
+
+.skill {
+    background-color: #f4f6f8;
+    border: 1px solid #dbe2ea;
+    border-radius: 30px;          /* pill shape */
+    padding: 18px 26px;
+    min-width: 220px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    transition: all 0.3s ease;
+}
+
+.skill-title {
+    display: block;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #1e3a5f;
+}
+
+.skill-desc {
+    display: block;
+    margin-top: 6px;
+    font-size: 0.85rem;
+    color: #555;
+}
+
+/* Hover effect */
+.skill:hover {
+    background-color: #1e3a5f;
+    transform: translateY(-3px);
+}
+
+.skill:hover .skill-title,
+.skill:hover .skill-desc {
+    color: #ffffff;
+}
+
+
+/* ===== Footer Section ===== */
+
+.footer {
+    background-color: #1e3a5f;   /* Navy blue */
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.footer-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+/* Social links container */
+.social-links {
+    margin-bottom: 15px;
+}
+
+/* Individual links */
+.social-links a {
+    text-decoration: none;
+    color: #ffcc80;   /* Gold accent */
+    margin: 0 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.social-links a:hover {
+    color: #ff6f61;   /* Coral */
+}
+
+/* Copyright text */
+.footer-copy {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+
+</style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Priyanka Rajpal</h1>
+        <p>Aspiring Web Developer & Designer</p>
+    </header>
+
+    <!-- Profile Section -->
+    <!-- <section class="profile-section">
+        <div class="profile-photo">
+            <img src="profile.jpg.png" alt="Priyanka Rajpal">
+        </div>
+        <div class="description">
+            Hello! I am Priyanka, a passionate web developer with a keen interest in creating beautiful and responsive web applications. I love exploring new technologies and continuously improving my skills to craft professional web solutions.
+        </div>
+    </section> -->
+
+    <section class="about-section">
+    <img src="profile.jpg.png" alt="Profile" class="profile-img">
+
+    <div class="about-text">
+        <p id="domPara">
+            Hello! I am Priyanka, a passionate web developer with a keen interest in
+            creating beautiful and responsive web applications. I love exploring new
+            technologies and continuously improving my skills to craft professional
+            web solutions.
+        </p>
+    </div>
+</section>
+
+
+    <!-- skills -->
+    
+<section class="skills-section">
+    <h2>Technical Skills</h2>
+
+    <div class="skills-container">
+        <div class="skill">
+    <span class="skill-title">HTML</span>
+    <span class="skill-desc">Structure of web pages</span>
+</div>
+
+<div class="skill">
+    <span class="skill-title">CSS</span>
+    <span class="skill-desc">Styling and layouts</span>
+</div>
+
+<div class="skill">
+    <span class="skill-title">JavaScript</span>
+    <span class="skill-desc">Dynamic page behavior</span>
+</div>
+
+<div class="skill">
+    <span class="skill-title">Java</span>
+    <span class="skill-desc">Object-oriented programming</span>
+</div>
+
+<div class="skill">
+    <span class="skill-title">MySQL</span>
+    <span class="skill-desc">Database management</span>
+</div>
+
+<div class="skill">
+    <span class="skill-title">Git & GitHub</span>
+    <span class="skill-desc">Version control</span>
+</div>
+
+
+
+    </div>
+</section>
+
+
+
+
+    <!-- Cards for Hobbies, Passion, Past Work, Social Life -->
+    <section class="cards">
+        <div class="card">
+            <h3>Hobbies</h3>
+            <p>Reading, Painting, Photography, Travel, and Blogging about tech trends.</p>
+        </div>
+        <div class="card">
+            <h3>Passion</h3>
+            <p>Web Development, UI/UX Design, and learning new programming languages.</p>
+        </div>
+        <div class="card">
+            <h3>Past Work</h3>
+            <p>Created dynamic websites, responsive portfolios, and small e-commerce projects using HTML, CSS, JS, and Java.</p>
+        </div>
+        <div class="card">
+            <h3>Social Life</h3>
+            <p>Active on community coding groups, online forums, and collaborating on open-source projects.</p>
+        </div>
+    </section>
+
+    <!-- Footer with Social Links -->
+    
+
+    <footer class="footer">
+    <p class="footer-title">Connect with Me</p>
+
+    <div class="social-links">
+        <a href="#" target="_blank">LinkedIn</a>
+        <a href="#" target="_blank">GitHub</a>
+        <a href="#" target="_blank">Instagram</a>
+    </div>
+
+    <p class="footer-copy">© 2026 Priyanka Rajpal | All Rights Reserved</p>
+</footer>
+
+<script src="exp3.js"></script>
+
+</body>
+</html>

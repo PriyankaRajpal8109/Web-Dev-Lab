@@ -1,0 +1,136 @@
+/* ===== Global ===== */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 0;
+    color: #2c2c2c;
+    transition: background-color 0.5s ease;
+}
+
+/* ===== Header ===== */
+header {
+    background-color: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 35px 0;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #cfe8ff;
+}
+
+/* ===== About Section ===== */
+.about-section {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 50px 80px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.profile-img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    border: 4px solid #ff6b5a;
+}
+
+.about-text {
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+/* ===== Skills ===== */
+.skills-section {
+    background-color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.skills-section h2 {
+    font-size: 1.8rem;
+    color: #1e3a5f;
+    margin-bottom: 20px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skill {
+    padding: 10px 18px;
+    border-radius: 20px;
+    border: 1px solid #cfd8dc;
+}
+
+/* ===== Cards ===== */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px;
+    background-color: #e9eef3;
+}
+
+.card {
+    background-color: white;
+    width: 260px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    border-top: 6px solid #2aa198;
+}
+
+.card h3 {
+    color: #1e3a5f;
+}
+
+/* ===== DOM Section ===== */
+.dom-section {
+    background-color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.dom-section button {
+    margin: 8px;
+    padding: 10px 18px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #1e3a5f;
+    color: white;
+}
+
+.dom-section button:hover {
+    background-color: #ff6f61;
+}
+
+ul {
+    list-style-type: square;
+    max-width: 200px;
+    margin: 10px auto;
+    text-align: left;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
